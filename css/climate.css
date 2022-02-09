@@ -1,0 +1,9 @@
+.climate {
+    margin-top: 45px;
+    display: flex;
+}
+
+.climate-section {
+    margin-top: -20px;
+    display: flex;
+}

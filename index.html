@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+		<script type="text/javascript">
+			jQuery(window).load(function($){
+				atualizaRelogio();
+			});
+		</script>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/input.css">
+  <link rel="stylesheet" href="css/climate.css">
+  <link rel="stylesheet" href="css/iphone.css">
+  <link rel="stylesheet" href="css/text.css">
+
+</head>
+
+<body>
+       
+  <section class="iphone">
+    <div class="notch"></div>
+    <h1 class="text">Gov Eugênio Barros-MA</h1>
+
+    <time class="time">
+      <div>
+        <output id="data" style="font-family:'Oswald' , 'avant garde'; font-size: 24px;"></output>
+      <div>
+      <div>
+        <output id="hora" style="font-family:'Oswald' , 'avant garde'; font-size: 24px;"></output>				
+      </div>			
+  
+      <script>
+        function atualizaRelogio(){ 
+        var momentoAtual = new Date();
+    
+        var vhora = momentoAtual.getHours();
+        var vminuto = momentoAtual.getMinutes();
+        var vsegundo = momentoAtual.getSeconds();
+      
+        var vdia = momentoAtual.getDate();
+        var vmes = momentoAtual.getMonth() + 1;
+        var vano = momentoAtual.getFullYear();
+      
+        if (vdia < 10){ vdia = "0" + vdia;}
+        if (vmes < 10){ vmes = "0" + vmes;}
+        if (vhora < 10){ vhora = "0" + vhora;}
+        if (vminuto < 10){ vminuto = "0" + vminuto;}
+        if (vsegundo < 10){ vsegundo = "0" + vsegundo;}
+  
+        dataFormat = vdia + " / " + vmes + " / " + vano;
+        horaFormat = vhora + " : " + vminuto + " : " + vsegundo;
+  
+        document.getElementById("data").innerHTML = dataFormat;
+        document.getElementById("hora").innerHTML = horaFormat;
+  
+        setTimeout("atualizaRelogio()",1000);
+          }
+      </script>
+  
+    </time>
+
+    <i class="icons" data-feather="sun"></i>
+    <script>
+      feather.replace()
+    </script>
+
+    <h1 class="text">100°C</h1>
+    <h2 class="text">sun for eternity</h2>
+
+    <clima class="climate">
+      <h3 class="text-day">seg</h2>
+      <h3 class="text-day">ter</h2>
+      <h3 class="text-day">qua</h2>
+      <h3 class="text-day">qui</h2>
+      <h3 class="text-day">sex</h2>
+      <h3 class="text-day">sab</h2>
+      <h3 class="text-day">dom</h2>
+    </clima>
+
+    <i class="icons-section" data-feather="sun"></i>
+    <script>
+      feather.replace()
+    </script>
+
+    <i class="icons-section" data-feather="sun"></i>
+    <script>
+      feather.replace()
+    </script>
+
+    <i class="icons-section" data-feather="sun"></i>
+    <script>
+      feather.replace()
+    </script>
+
+    <i class="icons-section" data-feather="sun"></i>
+    <script>
+      feather.replace()
+    </script>
+
+    <i class="icons-section" data-feather="sun"></i>
+    <script>
+      feather.replace()
+    </script>
+
+    <i class="icons-section" data-feather="sun"></i>
+    <script>
+      feather.replace()
+    </script>
+
+    <i class="icons-section" data-feather="sun"></i>
+    <script>
+      feather.replace()
+    </script>
+
+    <clima class="climate-section">
+      <h5 class="text-day">100°C</h2>
+      <h5 class="text-day">100°C</h2>
+      <h5 class="text-day">100°C</h2>
+      <h5 class="text-day">100°C</h2>
+      <h5 class="text-day">100°C</h2>
+      <h5 class="text-day">100°C</h2>
+      <h5 class="text-day">100°C</h2>
+    </clima>
+
+    <div class="menu"></div>
+  </section>
+</body>
+</html>

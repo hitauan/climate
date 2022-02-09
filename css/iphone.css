@@ -1,0 +1,46 @@
+.iphone {
+    height: 600px;
+    width: 300px;
+    background-color: #17202A ;
+    border-radius: 30px;
+    margin-left: 500px;
+    margin-top: 10px;
+    border: black solid 10px;
+}
+
+.iphone .notch {
+    width: 100px;
+    height: 10px;
+    background: black;
+    margin: 0 auto;
+    border-radius: 0 0 10px 10px;
+}
+
+.iphone .time {
+    font-family: 'Oswald';
+    text-align: center;
+    color: white;
+}
+
+.iphone .icons {
+    margin-top: 20px;
+    color: yellow;
+    height: 65px;
+    width: 65px;
+}
+
+.iphone .icons-section {
+    margin-top: -10px;
+    height: 30px;
+    width: 40px;
+    color: yellow;
+}
+
+.iphone .menu {
+    height: 2px;
+    width: 100px;
+    background: white;
+    margin-top: 43px;
+    margin-left: 100px;
+    border-radius: 50px;
+}

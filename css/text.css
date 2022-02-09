@@ -1,0 +1,12 @@
+.text {
+    font-family: 'Hind Siliguri';
+    color: white;
+    text-align: center ;
+}
+
+.text-day {
+    color: white ;
+    width: 43px;
+    margin-top: 20px;
+    font-family: 'Hind Siliguri';
+}
